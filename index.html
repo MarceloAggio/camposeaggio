@@ -1,54 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/parralax.css">
+	<link rel="stylesheet" href="css/rodape.css">
+
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			height: 3000px;
+		}
+
+		.navbar {
+			position: fixed;
+			z-index: 999 !important;
+			padding: 0 80px;
+			background-color: #2f2f35 !important;
+			text-transform: uppercase;
+		}
+
+		.nav-item {
+			margin: 0 6px;
+			font-size: 18px;
+			color: #fff;
+		}
+
+		.navbar-brand img {
+			width: 20%;
+		}
+
+		.navbar-brand {
+			padding: 0;
+			width: 40%;
+		}
+	</style>
+
 </head>
+
 <body>
 
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 		<!-- Logo -->
-		<a class="navbar-brand" href="#">Logo</a>
+		<a class="navbar-brand" href="#"><img src="img/logoNav.png" alt=""></a>
 
 		<!-- Menu Hambúrguer -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+
+		<div class="dropdown_menu">
+			<li><a href="">home</a></li>
+			<li><a href="">Quem Somos</a></li>
+			<li><a href="">Setores</a></li>
+			<li><a href="">Sócios</a></li>
+			<li><a href="">Contatos</a></li>
+		</div>
+
 
 		<!-- Links -->
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="#">teste</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">teste</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">teste</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Link 1</a>
-						<a class="dropdown-item" href="#">Link 2</a>
-						<a class="dropdown-item" href="#">Link 3</a>
-					</div>
+					<a class="nav-link active" href="#">home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">teste</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">teste</a>
+					<a class="nav-link" href="#">Setores</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sócios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contatos</a>
 				</li>
 			</ul>
 		</div>
+		<div class="toggle_btn">
+			<i class="fa-solid fa-bars"></i>
+		</div>
 	</nav>
 
-	<div class="container-fluid">
-		<h3>Responsive Navbar Example</h3>
-		<p>This is a responsive navbar using Bootstrap.</p>
+
+	<div class="wrapper">
+		<main>
+			<section class="module parallax parallax-1">
+			</section>
+
+			<section class="module content">
+				<div class="container">
+					<h2>Qualquer texto aqui..</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+				</div>
+			</section>
+
+			<section class="module parallax parallax-2">
+				<h1>Teste</h1>
+			</section>
+
+			<section class="module content">
+				<div class="container">
+					<h2>Qualquer texto aqui..</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+				</div>
+			</section>
+
+			<section class="module parallax parallax-3">
+				<h1>Terceiro titulo aqui</h1>
+			</section>
+
+			<section class="module content">
+				<div class="container">
+					<h2>Qualquer texto aqui..</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+						vel et, magnam eius!
+					</p>
+				</div>
+			</section>
+
+		</main>
 	</div>
 
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Mapa do Site</h4>
+					<ul>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Contatos</h4>
+					<ul>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Areas de Atuação</h4>
+					<ul>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+						<li><a href="#">teste</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Redes Sociais</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn');
+		const toggleBtnIcon = document.querySelector('.toggle_btn i');
+		const dropDownMenu = document.querySelector('.dropdown_menu');
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open');
+			const isOpen = dropDownMenu.classList.contains('open');
+
+			toggleBtnIcon.classList = isOpen
+				? 'fa-solid fa-xmark'
+				: 'fa-solid fa-bars'
+		}
+	</script>
+
+
 </body>
+
 </html>
