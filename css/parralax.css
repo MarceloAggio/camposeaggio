@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    color: #242424;
-    font-family: sans-serif;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
@@ -38,13 +30,13 @@ section.module:last-child {
 }
 
 section.module h2 {
-    margin-bottom: 40px;
+    margin: 40px 0;
     font-size: 30px;
 }
 
 section.module.content {
     padding: 40px 0;
-    background: #ece7d5;
+    background: #ffffff;
 }
 
 section.module.parallax {
@@ -77,15 +69,20 @@ section.module.parallax:after {
 
 
 section.module.parallax-1 {
-    background-image: url("../img/logosemfundo.png");
+    background-image: url("../img/Logotipo2.jpg");
+    background-size: contain;
 }
 
 section.module.parallax-2 {
-    background-image: url("https://images.unsplash.com/photo-1473181488821-2d23949a045a?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=");
+    background-image: url("https://img.freepik.com/fotos-gratis/a-lei-e-a-justica-convergem-na-ia-generativa-de-martelo-antigo_188544-9402.jpg?w=1380&t=st=1684190140~exp=1684190740~hmac=600b4399f78c072ff91f87db97ebf4f679a28ce7b47376e1c3be4c6818ff7c4a");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section.module.parallax-3 {
-    background-image: url("https://images.unsplash.com/photo-1472162314594-eca3c3d90df1?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+    background-image: url("https://img.freepik.com/fotos-gratis/natureza-morta-com-a-balanca-da-justica_23-2149776012.jpg?w=1380&t=st=1684190208~exp=1684190808~hmac=f65453d09fb0c73b9381b829fe74d46daff0b6d5c5999554b2991662cdd428fb");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section.module.parallax h1 {

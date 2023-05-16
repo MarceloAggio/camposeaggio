@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,6 +45,39 @@
 			padding: 0;
 			width: 40%;
 		}
+
+		.row {
+			margin-right: 0;
+		}
+
+		.accordion {
+			width: 60%;
+			margin: 0 auto;
+			border: 1px solid #fff;
+		}
+
+		.accordion-item {
+			border-bottom: 1px solid #080808;
+		}
+
+		.accordion-header {
+			border-top: 1px solid #000;
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		.accordion-content {
+			padding: 10px;
+			display: none;
+		}
+
+		p {
+			line-height: 30px;
+		}
+
+		#parralax2 {
+			height: 60vh !important;
+		}
 	</style>
 
 </head>
@@ -72,7 +106,7 @@
 					<a class="nav-link active" href="#">home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">teste</a>
+					<a class="nav-link" href="#">Quem somos</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Setores</a>
@@ -94,11 +128,49 @@
 	<div class="wrapper">
 		<main>
 			<section class="module parallax parallax-1">
+
 			</section>
 
 			<section class="module content">
 				<div class="container">
-					<h2>Qualquer texto aqui..</h2>
+					<h1 class="pb-4 font-weight-normal text-uppercase">Quem Somos</h1>
+					<p class="text-justify">
+						O escritório <b>CAMPOS & AGGIO ADVOGADOS</b> foi fundado com a missão de realizar um trabalho de
+						expertise diferenciada, e traz sua experiência e trajetória para este novo momento global de
+						mercado, atendendo às necessidades de seus clientes de forma integrada e apresentando soluções
+						versáteis.
+
+						Em razão da ampla experiência dos sócios fundadores, está no DNA desta firma de advocacia a
+						prestação de serviços jurídicos para empresas, experiência adquirida na teoria e na prática, no
+						decorrer dos mais de 15 anos de sólida atuação no mercado.
+
+						Tendência do mercado, temos como principal diferencial o atendimento baseado em confiança e nas
+						relações pessoais mais próximas com nossos clientes, tendo como objetivo a valorização constante
+						de clientes antigos, sem deixar de lado as novas oportunidades.
+					</p>
+					<p class="text-justify">
+						Profissionalismo, transparência e ética caracterizam a performance do escritório, que lhe
+						garantiu um rico portfólio de clientes nos mais diferentes setores socioeconômicos.
+
+						Contamos com uma equipe multidisciplinar apta a esclarecer e orientar nossos clientes nas mais
+						diversas áreas do Direito, encaminhando-os para a solução mais célere e menos onerosa.
+
+						A equipe é sólida, com pouca rotatividade, tornando o gerenciamento mais simples, possibilitando
+						os sócios dedicar mais tempo ao cuidado e aconselhamento dos clientes.
+
+						Atuamos em todo território nacional com o auxílio de nossos correspondentes, comprometidos com a
+						excelência nos trabalhos desenvolvidos.
+					</p>
+				</div>
+			</section>
+
+			<section class="module parallax parallax-2" id="parralax2">
+				<h1>Áreas de Atuação</h1>
+			</section>
+
+			<section class="module content">
+				<div class="container">
+					<h2>Áreas de Atuação</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
 						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
@@ -110,26 +182,58 @@
 						vel et, magnam eius!
 					</p>
 				</div>
-			</section>
 
-			<section class="module parallax parallax-2">
-				<h1>Teste</h1>
-			</section>
-
-			<section class="module content">
-				<div class="container">
-					<h2>Qualquer texto aqui..</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
+				<div class="accordion">
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Tributário </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 1</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito individual e coletivo do trabalho – Compliance Trabalhista e Relações Interpessoais </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 2</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Civil </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito do Consumidor </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Empresarial e Societário </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito das Sucessões - Planejamento Sucessório – Holding Familiar </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Digital – Lgpd - Lei Geral de Proteção de Dados </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Imobiliário </h2></div>
+						<div class="accordion-content">
+							<p>Conteúdo do Item 3</p>
+						</div>
+					</div>
 				</div>
+
 			</section>
 
 			<section class="module parallax parallax-3">
@@ -137,19 +241,7 @@
 			</section>
 
 			<section class="module content">
-				<div class="container">
-					<h2>Qualquer texto aqui..</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
-				</div>
+
 			</section>
 
 		</main>
@@ -200,7 +292,9 @@
 
 
 
+	<script src="js/script.js"></script>
 	<script>
+
 		const toggleBtn = document.querySelector('.toggle_btn');
 		const toggleBtnIcon = document.querySelector('.toggle_btn i');
 		const dropDownMenu = document.querySelector('.dropdown_menu');
