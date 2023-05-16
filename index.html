@@ -49,28 +49,44 @@
 		.row {
 			margin-right: 0;
 		}
-
-		.accordion {
-			width: 60%;
+		.accordion{
 			margin: 0 auto;
-			border: 1px solid #fff;
+			width: 80%;
 		}
-
-		.accordion-item {
-			border-bottom: 1px solid #080808;
+		.accordion .contentBx{
+			position: relative;
+			margin: 10px 20px;
 		}
-
-		.accordion-header {
-			border-top: 1px solid #000;
+		.accordion .contentBx .label{
+			position: relative;
 			padding: 10px;
+			background: #2f2f35;
+			color: #fff;
 			cursor: pointer;
 		}
-
-		.accordion-content {
-			padding: 10px;
-			display: none;
+		.accordion .contentBx .label::before{
+			content: "+";
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			font-size: 1.5rem;
 		}
-
+		.accordion .contentBx.active .label::before{
+			content: '-';
+		}
+		.accordion .contentBx .content{
+			position: relative;
+			background: #fff;
+			height: 0;
+			overflow: hidden;
+			transition: 0.5s;
+			overflow-y: auto;
+		}
+		.accordion .contentBx.active .content{
+			height: 150px;
+			padding: 10px;
+		}
 		p {
 			line-height: 30px;
 		}
@@ -170,73 +186,62 @@
 
 			<section class="module content">
 				<div class="container">
-					<h2>Áreas de Atuação</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-						dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
-						vel et, magnam eius!
-					</p>
+					<h1 class="pb-4 font-weight-normal text-uppercase text-center">Áreas de Atuação</h1>
 				</div>
 
 				<div class="accordion">
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Tributário </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 1</p>
+					<div class="contentBx">
+						<div class="label">teste 1</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito individual e coletivo do trabalho – Compliance Trabalhista e Relações Interpessoais </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 2</p>
+					<div class="contentBx">
+						<div class="label">teste 2</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Civil </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito do Consumidor </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Empresarial e Societário </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito das Sucessões - Planejamento Sucessório – Holding Familiar </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Digital – Lgpd - Lei Geral de Proteção de Dados </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header"><h2 class="font-weight-normal"> Direito Imobiliário </h2></div>
-						<div class="accordion-content">
-							<p>Conteúdo do Item 3</p>
+					<div class="contentBx">
+						<div class="label">teste 3</div>
+						<div class="content">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 				</div>
 
-			</section>
 
-			<section class="module parallax parallax-3">
+			<section class="module parallax parallax-3 mt-6">
 				<h1>Terceiro titulo aqui</h1>
 			</section>
 
@@ -306,6 +311,14 @@
 			toggleBtnIcon.classList = isOpen
 				? 'fa-solid fa-xmark'
 				: 'fa-solid fa-bars'
+		}
+
+		const accordion = document.getElementsByClassName('contentBx');
+		
+		for (let i = 0; i < accordion.length; i++) {
+			accordion[i].addEventListener('click', function(){
+				this.classList.toggle('active')
+			})
 		}
 	</script>
 
