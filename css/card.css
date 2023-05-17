@@ -1,0 +1,60 @@
+/*Magic card*/
+.card {
+    width: 65%;
+    height: 300px;
+    background: #2f2f35;
+    overflow: visible;
+    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 10px 1rem;
+}
+
+.card-img {
+    --size: 150px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-image: url("https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg?w=1380&t=st=1684279324~exp=1684279924~hmac=2205ff707570ef2a8c9a20462c611a0cd54f23b142f5ce4e02a79363f41486eb/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+
+/*Text*/
+.text-title {
+    text-transform: uppercase;
+    color: #fff !important;
+    letter-spacing: 0.05rem;
+}
+
+.text-body {
+    font-size: .8em;
+    text-align: center;
+    color: #fff !important;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#socios {
+    margin: 0 auto !important;
+}
+
+.col-md-6 .card {
+    margin: 0 auto !important;
+}
+.card p{
+    margin: 0 !important;
+}

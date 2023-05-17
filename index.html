@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/navbar.css">
 	<link rel="stylesheet" href="css/parralax.css">
 	<link rel="stylesheet" href="css/rodape.css">
+	<link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/contato.css">
 
 	<style>
 		body {
@@ -49,22 +51,26 @@
 		.row {
 			margin-right: 0;
 		}
-		.accordion{
+
+		.accordion {
 			margin: 0 auto;
 			width: 80%;
 		}
-		.accordion .contentBx{
+
+		.accordion .contentBx {
 			position: relative;
 			margin: 10px 20px;
 		}
-		.accordion .contentBx .label{
+
+		.accordion .contentBx .label {
 			position: relative;
 			padding: 10px;
-			background: #2f2f35;
-			color: #fff;
+			color: #000;
+			border-bottom: 1px solid #000;
 			cursor: pointer;
 		}
-		.accordion .contentBx .label::before{
+
+		.accordion .contentBx .label::before {
 			content: "+";
 			position: absolute;
 			top: 50%;
@@ -72,10 +78,12 @@
 			transform: translateY(-50%);
 			font-size: 1.5rem;
 		}
-		.accordion .contentBx.active .label::before{
+
+		.accordion .contentBx.active .label::before {
 			content: '-';
 		}
-		.accordion .contentBx .content{
+
+		.accordion .contentBx .content {
 			position: relative;
 			background: #fff;
 			height: 0;
@@ -83,15 +91,26 @@
 			transition: 0.5s;
 			overflow-y: auto;
 		}
-		.accordion .contentBx.active .content{
+
+		.accordion .contentBx.active .content {
 			height: 150px;
 			padding: 10px;
 		}
+
 		p {
 			line-height: 30px;
 		}
 
+		#parralax1 {
+			height: 90vh !important;
+		}
+
 		#parralax2 {
+			height: 50vh !important;
+		}
+
+		#parralax3 {
+			margin-top: 50px !important;
 			height: 60vh !important;
 		}
 	</style>
@@ -143,7 +162,7 @@
 
 	<div class="wrapper">
 		<main>
-			<section class="module parallax parallax-1">
+			<section id="parralax1" class="module parallax parallax-1">
 
 			</section>
 
@@ -186,71 +205,113 @@
 
 			<section class="module content">
 				<div class="container">
-					<h1 class="pb-4 font-weight-normal text-uppercase text-center">Áreas de Atuação</h1>
+					<h1 class="pb-4 font-weight-normal text-uppercase text-center">Setores</h1>
 				</div>
 
 				<div class="accordion">
 					<div class="contentBx">
-						<div class="label">teste 1</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase">teste 1</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 2</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 2</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 					<div class="contentBx">
-						<div class="label">teste 3</div>
+						<div class="label"><h3 class="font-weight-normal text-uppercase"> teste 3</h3></div>
 						<div class="content">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et sapiente quasi. Non quod cupiditate distinctio.</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quos ea architecto
+								tenetur dicta reiciendis alias iste similique excepturi deleniti porro corporis aut et
+								sapiente quasi. Non quod cupiditate distinctio.</p>
 						</div>
 					</div>
 				</div>
 
 
-			<section class="module parallax parallax-3 mt-6">
-				<h1>Terceiro titulo aqui</h1>
-			</section>
+				<section id="parralax3" class="module parallax parallax-3 mt-6">
+					<h1>Sócios</h1>
+				</section>
 
-			<section class="module content">
-
-			</section>
-
+				<section class="module content mt-5">
+					<div class="row" id="socios">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-img"></div>
+								<p class="text-title">Autor</p>
+								<div class="card-info">
+									<p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Corrupti
+										repellat, consequuntur doloribus voluptate esse iure?</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-img"></div>
+								<p class="text-title">Autor</p>
+								<div class="card-info">
+									<p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Corrupti
+										repellat, consequuntur doloribus voluptate esse iure?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 		</main>
 	</div>
+
+	<section class="contato mb-5">
+		
+	</section>
 
 	<footer class="footer">
 		<div class="container">
@@ -314,9 +375,9 @@
 		}
 
 		const accordion = document.getElementsByClassName('contentBx');
-		
+
 		for (let i = 0; i < accordion.length; i++) {
-			accordion[i].addEventListener('click', function(){
+			accordion[i].addEventListener('click', function () {
 				this.classList.toggle('active')
 			})
 		}
