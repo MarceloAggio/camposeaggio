@@ -1,8 +1,7 @@
 /*Magic card*/
 .card {
     width: 65%;
-    height: 300px;
-    background: #2f2f35;
+    background: #C0C0C0;
     overflow: visible;
     box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -25,25 +24,33 @@
     height: var(--size);
     border-radius: 50%;
     transform: translateY(-50%);
-    background-image: url("https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg?w=1380&t=st=1684279324~exp=1684279924~hmac=2205ff707570ef2a8c9a20462c611a0cd54f23b142f5ce4e02a79363f41486eb/");
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     transition: all .3s ease-in-out;
+}
+
+#erick{
+    background-image: url("../img/erickAggio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#campos{
+    background-image: url("../img/erickAggio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 /*Text*/
 .text-title {
     text-transform: uppercase;
-    color: #fff !important;
+    color: #000 !important;
     letter-spacing: 0.05rem;
 }
 
 .text-body {
     font-size: .8em;
     text-align: center;
-    color: #fff !important;
+    color: #000 !important;
     font-weight: 400;
     font-style: italic;
 }
@@ -57,4 +64,11 @@
 }
 .card p{
     margin: 0 !important;
+}
+
+@media (max-width: 770px){
+    
+.col-md-6 .card {
+    margin: 55px auto !important;
+}
 }

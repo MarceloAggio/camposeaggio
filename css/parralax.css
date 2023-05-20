@@ -111,3 +111,17 @@ section.module.parallax h1 {
         font-size: 36px;
     }
 }
+
+
+#parralax1 {
+    height: 100vh !important;
+}
+
+#parralax2 {
+    height: 50vh !important;
+}
+
+#parralax3 {
+    margin-top: 50px !important;
+    height: 60vh !important;
+}

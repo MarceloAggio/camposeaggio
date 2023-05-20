@@ -5,10 +5,20 @@
     list-style: none;
     box-sizing: border-box;
 }
-body{
-    font-family: montserrat;
+body {
+    font-family: 'Montserrat', sans-serif;
+
 }
+.row {
+    margin-right: 0;
+}
+
+p {
+    line-height: 30px;
+}
+
 a{
+
     text-decoration: none;
 }
 .nav2{
@@ -105,4 +115,27 @@ label.logo{
     label{
         margin: 0px;
     }
+}
+.copy {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.copy span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.copy {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.copy span {
+    font-weight: bold;
+    color: #ffffff;
+}
+.copy a{
+    color: #fff;
 }
