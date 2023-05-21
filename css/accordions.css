@@ -39,6 +39,28 @@
 }
 
 .accordion .contentBx.active .content {
-    height: 150px;
     padding: 10px;
 }
+
+.accordion .contentBx.active #setor1{height: 450px !important;}
+.accordion .contentBx.active #setor2{height: 250px !important;}
+.accordion .contentBx.active #setor3{height: 250px !important;}
+.accordion .contentBx.active #setor4{height: 450px !important;}
+.accordion .contentBx.active #setor5{height: 350px !important;}
+.accordion .contentBx.active #setor6{height: 300px !important;}
+.accordion .contentBx.active #setor7{height: 250px !important;}
+.accordion .contentBx.active #setor8{height: 100px !important;}
+
+
+
+@media (max-width: 520px){
+.accordion .contentBx.active #setor1{height: 700px !important;}
+.accordion .contentBx.active #setor2{height: 450px !important;}
+.accordion .contentBx.active #setor3{height: 450px !important;}
+.accordion .contentBx.active #setor4{height: 700px !important;}
+.accordion .contentBx.active #setor5{height: 400px !important;}
+.accordion .contentBx.active #setor6{height: 400px !important;}
+.accordion .contentBx.active #setor7{height: 450px !important;}
+.accordion .contentBx.active #setor8{height: 250px !important;}
+}
+.accordion .contentBx.active .contentSetor{height: 100px !important;}

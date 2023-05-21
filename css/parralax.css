@@ -74,13 +74,13 @@ section.module.parallax-1 {
 }
 
 section.module.parallax-2 {
-    background-image: url("https://img.freepik.com/fotos-gratis/a-lei-e-a-justica-convergem-na-ia-generativa-de-martelo-antigo_188544-9402.jpg?w=1380&t=st=1684190140~exp=1684190740~hmac=600b4399f78c072ff91f87db97ebf4f679a28ce7b47376e1c3be4c6818ff7c4a");
+    background-image: url("../img/martelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 section.module.parallax-3 {
-    background-image: url("https://img.freepik.com/fotos-gratis/predio-de-escritorios-moderno-opiniao-de-angulo-baixo-dos-arranha-ceus-na-cidade-de-singapura-predio-de-escritorios-moderno-opiniao-de-angulo-baixo-dos-arranha-ceus-na-cidade-de-singapura_231208-1463.jpg?w=1380&t=st=1684277306~exp=1684277906~hmac=b3229b33bd9689112445b7255d6c24d91ee33ed978f3cd1003ba4667de8a619f");
+    background-image: url("../img/predio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
