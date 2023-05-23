@@ -72,3 +72,13 @@
     margin: 55px auto !important;
 }
 }
+@media (max-width: 900px){
+    .card{
+        width: 90% !important;
+    }
+}
+@media (max-width: 450px){
+    .card{
+        width: 95% !important;
+    }
+}
