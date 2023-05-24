@@ -11,8 +11,11 @@ body {
 }
 .row {
     margin-right: 0;
+    justify-content: center !important;
 }
-
+.m0Auto{
+    margin: 0 auto;
+}
 p {
     line-height: 30px;
 }

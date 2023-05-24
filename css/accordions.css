@@ -64,3 +64,7 @@
 .accordion .contentBx.active #setor8{height: 250px !important;}
 }
 .accordion .contentBx.active .contentSetor{height: 100px !important;}
+
+.tituloSetor{
+    width: 80%;
+}
