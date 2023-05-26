@@ -12,11 +12,9 @@ body {
 
 .acessoria {
     background-color: #2f2f35;
-    height: 250px;
 }
 
 .contate {
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -26,4 +24,35 @@ body {
 
 .footer-col img {
     width: 100%;
+}
+@media(max-width: 870px){
+    .acessoria .row{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+@media(max-width: 768px) {
+    .imagem {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 1002px) {
+    .nav-item {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .navbar {
+        padding: 0px 50px;
+    }
+    .nav-item {
+        font-size: 15px !important;
+    }
+}
+.btn{
+    box-shadow: 3px 4px 17px 0px #040200 !important;
 }
