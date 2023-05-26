@@ -67,6 +67,11 @@ a {
         margin: 0px 3px;
     }
 }
+@media(max-width: 1180px){
+    .nav-item { 
+        font-size: 16px;
+    }
+}
 @media(max-width: 1002px) {
     .nav-item {
         font-size: 13px !important;

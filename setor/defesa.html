@@ -12,47 +12,139 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logoNavFavicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/parralax.css">
     <link rel="stylesheet" href="../css/rodape.css">
-    <link rel="stylesheet" href="../css/card.css">
-    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/accordions.css">
+    <link rel="stylesheet" href="css/golpe.css">
+
+
+    <style>
+        @media(max-width: 992px) {
+            .nav-item {
+                display: block;
+            }
+
+            .nav-item a {
+                font-size: 20px;
+                color: #fff !important;
+            }
+
+            .dropdown-menu a {
+                color: #000 !important;
+            }
+        }
+
+        .imagem img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .texto {
+            height: 100%;
+        }
+
+        .navbar {
+            position: relative !important;
+        }
+
+        .h1-part2 {
+            width: 100%;
+        }
+
+        .item {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            height: 254px;
+            border-radius: 20px;
+            background: #f5f5f5;
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+            margin: 0 auto;
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            gap: .5em;
+            display: grid;
+            place-content: center;
+        }
+
+        .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #2f2f35;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+
+        .text-body {
+            color: rgb(134, 134, 134);
+        }
+
+        /*Text*/
+        .text-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /*Hover*/
+        .card:hover {
+            border-color: #2f2f35;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+
+
+        .text-info {
+            cursor: pointer !important;
+        }   
+    </style>
+
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img src="../img/logoNav.png" alt=""></a>
 
-            <!-- Menu Hambúrguer -->
-
-            <div class="dropdown_menu">
-                <li class="nave"><a href="index.html">home</a></li>
-                <li class="nave"><a href="#quem-somos">Quem Somos</a></li>
-                <li class="nave"><a href="#setores">Setores</a></li>
-                <li class="nave"><a href="#socios">Sócios</a></li>
-                <li class="nave"><a href="#contatos">Contatos</a></li>
-            </div>
-
-
             <!-- Links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Pagina Inical</a>
+                        <a class="nav-link active" href="index.html">Pagina Inical</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Demais áreas
+                            Demais áreas de Atuação
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item  font-weight-bold" href="defesa.html">Defesa Busca e Apreensão</a></li>
-                            <li><a class="dropdown-item" href="golpes.html">Golpe Pix</a></li>
+                            <li><a class="dropdown-item font-weight-bold" href="#">Golpe Pix</a></li>
                             <li><a class="dropdown-item" href="fraude.html">Fraude Cartão de Credito</a></li>
+                            <li><a class="dropdown-item" href="defesa.html">Defesa Busca e Apreensão</a></li>
                             <li><a class="dropdown-item" href="execucao.html">Execução Fsscal</a></li>
                         </ul>
                     </li>
@@ -62,24 +154,27 @@
 
         </nav>
     </header>
+
     <div>
         <div class="row">
-            <div class="col-md-6 teste">
-                <img src="imgGolpe/callcenter.jpg" alt="">
+            <div class="col-md-6 imagem">
+                <img src="imgGolpe/call.jpg" alt="">
             </div>
-            <div class="col-md-6 my-5 pt-2">
+            <div class="col-md-6 my-5 pt-2 texto">
                 <h4 class="mt-2 text-secondary">
                     Campos & Aggio Advogados
                 </h4>
                 <h1 class="h1-part2 mt-3 text-secondary">
-                    Especialista em casos de Golpe PIX e Fraudes Bancárias
+                    Assessoria Jurídica em ações de Busca e Apreensão
                 </h1>
                 <h4 class="mt-2 text-secondary mt-3">
-                    Nosso escritório conta com profissionais qualificados para atender as demandas referentes as
-                    inúmeras fraudes que ocorrem todos os dias, auxiliando nossos clientes na resolução e ressarcimento
-                    dos valores envolvidos.
+                    Somos especialistas em defesas de Busca e Apreensão e em revisões de contratos de financiamentos de
+                    veículos.
+                    Entre em contato conosco agora mesmo para uma análise do seu caso.
                 </h4>
                 <h5 class="font-weight-bold mt-5 text-secondary">
+                    Mais de 12 anos de experiência em ações bancárias e consumeristas.
+                    <br>
                     Atuamos em todo Brasil
                 </h5>
                 <a target="_blank" href="https://wa.link/tfpx2n" class="mt-3 btn btn-secondary"><i
@@ -90,6 +185,162 @@
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <section class="acessoria mb-4">
+        <h1 class="text-center text-white pt-3">Nossa equipe aguarda seu contato</h1>
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column pt-3 mt-3">
+                <h3 class="text-center text-white">Contato imediato em horário comercial</h3>
+                <button class="btn btn-secondary text-center contate mt-2 mb-3">Contate nossa Acessória</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 mt-6 pb-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Solução personalizada</p>
+                    </div>
+                    <button class="card-button">Ver Mais</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Atendimento on-line</p>
+                    </div>
+                    <button class="card-button">Ver Mais</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Equipe de experiente em demandas de Busca e Apreensão</p>
+                    </div>
+                    <button class="card-button">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+        <h1 class="text-center mt-5">Perguntas frequentes</h1>
+        <h4 class="text-center">Não achou uma resposta?</h4>
+        <h4 class="text-center">Envie-nos um email para: <span class="text-info">erick.aggio@camposeaggio.com.br</span>
+        </h4>
+    </section>
+    <section class="module content mt-5">
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">
+                    <h3 class="font-weight-normal">A BUSCA E APREENSÃO É LEGAL?</h3>
+                </div>
+                <div class="content contentSetor">
+                    Sim, o procedimento é legal.
+                    O Banco pode requerer a medida no caso de inadimplemento do contrato, no entanto, é necessário que a
+                    instituição cumpra os requisitos legais para que a busca e apreensão seja válida.
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">
+                    <h3 class="font-weight-normal">O PODE BANCO LEILOAR OU VENDER O VEÍCULO?</h3>
+                </div>
+                <div class="content contentSetor">
+                    Caso não haja apresentação de defes no prazo legal, sim, pois a propriedade e posse pasam a ser do banco, que poderá optar pela venda do bem, seja por meio de leião ou procedimento direto.
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">
+                    <h3 class="font-weight-normal">O BANCO PODE ME COBRAR MAIS ALGUM VALOR?</h3>
+                </div>
+                <div class="content contentSetor">
+                    Sim, caso o valor da venda não seja suficiente para saldar o débito, o banco poderá cobrar o saldo residual, na mesma ação.
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">
+                    <h3 class="font-weight-normal">É POSSÍVEL SE DEFENDER APÓS A APREENSÃO?</h3>
+                </div>
+                <div class="content contentSetor">
+                    Sim, você pode se defender, evitar o leilão e até recuperar seu veículo. Mas o tempo é crucial nesses casos, consulte nosso time para que possamos te ajudar nessa situação evitando maiores prejuízos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="../img/logoNav.png" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>Mapa do Site</h4>
+                    <ul>
+                        <li><a href="#" class="text-uppercase">home</a></li>
+                        <li><a href="#" class="text-uppercase">Quem somos</a></li>
+                        <li><a href="#" class="text-uppercase">Setores</a></li>
+                        <li><a href="#" class="text-uppercase">Sócios</a></li>
+
+                        <li><a href="#" class="text-uppercase">
+                                Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contatos</h4>
+                    <ul>
+                        <li><a href="#">(11) 11111-1111</a></li>
+                        <li><a href="#">(11) 1111-1111</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">testeteste@teste</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copy">
+                <span class="font-weight-normal">
+                    <span class="font-weight-normal">Av. Marquês de São Vincente, 230 - 9º Andar - CJ. 903 - Barra
+                        Funda, SP
+                    </span>
+                    <br>
+                    <a>&copy;Campos e Aggio.</a>
+                    Todos os direitos reservados.
+                    <br>
+                    <a class="mt-5">Desenvolvido Por <a href="">Marcelo N.Aggio</a></a>
+                </span>
+                <br>
+
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Splide(".splide").mount();
+        });
+
+
+        const accordion = document.getElementsByClassName('contentBx');
+
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="path-to-the-file/splide.min.js"></script>
 </body>
+
 </html>
