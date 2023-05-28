@@ -18,85 +18,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/accordions.css">
     <link rel="stylesheet" href="css/golpe.css">
-
+    <link rel="stylesheet" href="css/execucao.css">
 
     <style>
-        @media(max-width: 992px) {
-            .nav-item {
-                display: block;
-            }
-
-            .nav-item a {
-                font-size: 20px;
-                color: #fff !important;
-            }
-
-            .dropdown-menu a {
-                color: #000 !important;
-            }
-        }
-
-        .imagem img {
-            height: 100%;
-            width: 100%;
-        }
-        .texto{
-            height: 100%;
-        }
-        .navbar {
-            position: relative !important;
-        }
-
-        .h1-part2 {
-            width: 100%;
-        }
-
-        .item {
-            width: 100%;
-        }
-
-        .card {
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .cards .wpp {
-            background-image: url("imgGolpe/wpp.jpg");
-        }
-
-        .cards .call {
-            background-image: url("imgGolpe/call.jpg");
-        }
-
-        .cards .amazon {
-            background-image: url("imgGolpe/amazon.png");
-        }
-
-        .cards .roubo {
-            background-image: url("imgGolpe/roubo.jpg");
-        }
-
-        .cards .card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            height: 400px;
-            width: 450px;
-            border-radius: 10px;
-            color: white;
-            cursor: pointer;
-            transition: 400ms;
-        }
-
-        .cards .card p.tip {
-            font-size: 1em;
-            font-weight: 700;
-        }
-        .text-info{
-            cursor: pointer !important;
-        }
+        
     </style>
 
 </head>
@@ -108,28 +33,39 @@
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img src="../img/logoNav.png" alt=""></a>
 
+            <!-- Menu Hambúrguer -->
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="golpes.html">Golpe Pix</a></li>
+                <li><a href="defesa.html">Defesa busca e apreensão</a></li>
+                <li><a href="fraude.html">Fraude Cartão de credito</a></li>
+                <li><a href="execucao.html">Execução Fiscal</a></li>
+            </div>
+
             <!-- Links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Pagina Inical</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Demais áreas de Atuação
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item font-weight-bold" href="execucao.html">Execução Fiscal</a></li>
-                            <li><a class="dropdown-item" href="golpes.html">Golpe Pix</a></li>
-                            <li><a class="dropdown-item" href="fraude.html">Fraude Cartão de Credito</a></li>
-                            <li><a class="dropdown-item" href="defesa.html">Defesa Busca e Apreensão</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="golpes.html">Golpe Pix</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="defesa.html">Defesa busca e apreensão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fraude.html">Fraude Cartão de credito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link   active" href="execucao.html">Execução Fiscal</a>
+                    </li>
                 </ul>
             </div>
-
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -146,10 +82,12 @@
                     Recebi uma Execução Fiscal. O que fazer?
                 </h1>
                 <h4 class="mt-2 text-secondary mt-3">
-                    Primeiro, entenda que execuções fiscais são processos judiciais de cobrança por débitos fiscais e tributários
+                    Primeiro, entenda que execuções fiscais são processos judiciais de cobrança por débitos fiscais e
+                    tributários
                 </h4>
                 <h5 class="font-weight-bold mt-5 text-secondary">
-                    Segundo, como acontece em todo processo, você tem o direito legal de apresentar sua defesa para impugnar a execução fiscal e verificar a correta atuação das Fazendas Públicas.
+                    Segundo, como acontece em todo processo, você tem o direito legal de apresentar sua defesa para
+                    impugnar a execução fiscal e verificar a correta atuação das Fazendas Públicas.
                 </h5>
                 <a target="_blank" href="https://wa.link/tfpx2n" class="mt-3 btn btn-secondary"><i
                         class="fa-brands fa-whatsapp pr-3"></i>
@@ -159,44 +97,143 @@
         </div>
     </div>
 
-    
+    <section class="mb-4">
+        <div class="informacoes pb-5">
+            <h1 class="text-center pt-5">Saiba o precisa ser feito para se defender</h1>
+            <div class="containere">
+                <div class="card img1">
+                    <h3 class="mb-3">1 - Leia a intimação</h3>
+                    <h5 style="width: 90%;margin: 0 auto;" class="text-justify">
+                        Conheça seu problema.
+                        <br>
+                        Leia a carta de intimação com atenção você saberá exatamente o que está sendo discutido no
+                        processo e o tipo de imposto executado naquela ação!
+                    </h5>
+                </div>
+                <div class="card img2">
+                    <h3 class="mb-3">2 - Não deixe para depois</h3>
+                    <h5 style="width: 90%;margin: 0 auto;" class="text-justify">
+                        Processos de execução possuem um caráter ”especial” na justiça. Seus prazos são menores e suas
+                        consequências são mais gravosas.
+                        <br>
+                        Sem as atitudes corretas na hora certa, você poderá ter bens penhoras ou seu nome negativado.
+                    </h5>
+                </div>
+                <div class="card img3">
+                    <h3 class="mb-3">3 - Procure um Advogado</h3>
+                    <h5 style="width: 90%;margin: 0 auto;" class="text-justify">
+                        A melhor e única forma de se defender de um processo de execução é procurando um profissional
+                        com experiência no assunto.
+                        <br>
+                        Não são poucas as vezes em que o Poder Público realiza cobranças indevidas.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section class="local mt-3">
+        <h1 class="text-center">Localização</h1>
+        <div class="row colunas">
+            <div class="col-md-6 infos">
+                <h3 class="pb-4 text-secondary">Contate um especialista</h3>
+                <h3 class="pb-4 text-secondary">Contato imediato em horário comercial</h3>
+                <a class="btn btn-secondary mb-4" href="">Contate um Advogado</a>
+                <h3 class="pb-4">Campos & Aggio Advogados</h3>
+                <h4 class="pb-4 text-secondary">Avenida Marquês De São Vicente 230, São Paulo - São Paulo, 01139, Brazil
+                </h4>
+            </div>
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3006500572687!2d-46.6621582!3d-23.5216866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5807b52588af%3A0x32be386c64f2700e!2sAv.%20Marqu%C3%AAs%20de%20S%C3%A3o%20Vicente%2C%20230%20-%20V%C3%A1rzea%20da%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001139-000!5e0!3m2!1spt-BR!2sbr!4v1685141994780!5m2!1spt-BR!2sbr"
+                    style="border-radius: 8px;" width="100%" height="350" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="propaganda pt-4 pb-4">
+        <h3 class="text-center">Venha nós conhecer melhor visite nosso site</h3>
+        <h5 class="text-center"><a class="linkSite" href="">https://camposeaggio.com</a></h5>
+    </section>
 
     <section class="mt-3">
         <h1 class="text-center mt-5">Perguntas frequentes</h1>
         <h4 class="text-center">Não achou uma resposta?</h4>
-        <h4 class="text-center">Envie-nos um email para: <span class="text-info">erick.aggio@camposeaggio.com.br</span></h4>
+        <h4 class="text-center">Envie-nos um email para: <span class="text-info">erick.aggio@camposeaggio.com.br</span>
+        </h4>
     </section>
+
     <section class="module content mt-5">
         <div class="accordion">
             <div class="contentBx">
                 <div class="label">
-                    <h3 class="font-weight-normal">É possível recuperar valores que foram objeto de Fraude?</h3>
+                    <h3 class="font-weight-normal">Recebi uma notificação de execução fiscal. E agora?</h3>
                 </div>
                 <div class="content contentSetor">
-                    Na grande maioria sim, os golpes existentes utilizam o abuso de confiança que tem com a vítima e
-                    falhas no sistema bancário que permite a consumação dos golpes aplicados
+                    Talvez uma intimação tenha sido entregue a você por um oficial de justiça ou pelo correio,
+                    solicitando que o pagamento do débito fiscal seja efetuado em até 5 dias, sob pena de penhora de
+                    bens.
+                    <br>
+                    Se nenhuma providência for tomada de forma imediata, valores serão bloqueados da sua conta corrente
+                    (até o limite do valor da dívida). Além disso, seus bens poderão ser apreendidos e/ou penhorados.
+                    <br>
+                    Portanto, é necessário agir rapidamente. Um advogado especialista em Direito Tributário deve
+                    analisar a dívida fiscal para verificar qual a melhor estratégia para preparar a sua defesa na
+                    execução fiscal.
                 </div>
             </div>
             <div class="contentBx">
                 <div class="label">
-                    <h3 class="font-weight-normal">É certeza que você vai recuperar meu dinheiro?</h3>
+                    <h3 class="font-weight-normal">Qual o prazo para apresentar minha defesa em ação de execução fiscal
+                    </h3>
                 </div>
                 <div class="content contentSetor">
-                    Há grandes chances de recuperar o valor administrativamente, e caso não seja possível pela via
-                    administativa, a medida judicial é o caminho ideal para recuperar os valores.
+                    O prazo para opor Embargos à Execução e apresentar sua defesa é de 15 dias, a contar da data em que
+                    você foi citado
                 </div>
             </div>
             <div class="contentBx">
                 <div class="label">
-                    <h3 class="font-weight-normal">É Imediato ?</h3>
+                    <h3 class="font-weight-normal">Se eu não me defender, quais serão as consequências?</h3>
                 </div>
                 <div class="content contentSetor">
-                    Se for administrativo sim, próprio banco faz o bloqueio. Se for judicial dependerá de um processo,
-                    mas os valores serão devolvidos com juros e correção monetária, como um investimento.
+                    É extremamente importante que você apresente sua defesa em uma ação de execução fiscal. A falta de
+                    defesa pode levar a consequências graves, como a apreensão de seus bens e até mesmo o bloqueio de
+                    seus fundos bancários.
+                    <br>
+                    Além disso, a ausência de pagamento da dívida fiscal pode resultar em protesto, inscrição do débito
+                    em órgãos de proteção ao crédito e em ações judiciais de cobrança.
+                    <br>
+                    Portanto, se você está diante de uma ação de execução fiscal, não hesite em buscar o auxílio de um
+                    advogado especializado em Direito Tributário.
+                    <br>
+                    Somente um profissional com expertise no assunto poderá ajudá-lo a apresentar uma defesa consistente
+                    e adequada, garantindo seus direitos e evitando prejuízos financeiros e pessoais. Não espere mais,
+                    consulte um advogado imediatamente! esposta a este item.
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">
+                    <h3 class="font-weight-normal">Se eu protocolar a defesa, meus bens ainda sim serão bloqueados?
+                    </h3>
+                </div>
+                <div class="content contentSetor">
+                    Ao protocolar a sua defesa em uma ação de execução fiscal, é possível adotar medidas para suspender
+                    o bloqueio de contas e bens.
+                    <br>
+                    Desse modo, se a defesa for apresentada corretamente e dentro do prazo, é possível evitar o bloqueio
+                    de seus bens e contas após a protocolização da defesa no processo.
+                    <br>
+                    É importante ressaltar que contar com a assessoria de um advogado especializado em Direito
+                    Tributário pode ser crucial para garantir que sua defesa seja consistente e apresentada de forma
+                    adequada, minimizando os riscos de bloqueios de bens e valores.
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <footer class="footer mt-5">
         <div class="container">
@@ -237,19 +274,19 @@
 
             </div>
             <div class="copy">
-				<span class="font-weight-normal">
-					<span class="font-weight-normal">Av. Marquês de São Vincente, 230 - 9º Andar - CJ. 903 - Barra
-						Funda, SP
-					</span>
-					<br>
-					<a>&copy;Campos e Aggio.</a>
-					Todos os direitos reservados.
-					<br>
-					<a class="mt-5">Desenvolvido Por <a href="">Marcelo N.Aggio</a></a>
-					</span>
-				<br>
+                <span class="font-weight-normal">
+                    <span class="font-weight-normal">Av. Marquês de São Vincente, 230 - 9º Andar - CJ. 903 - Barra
+                        Funda, SP
+                    </span>
+                    <br>
+                    <a>&copy;Campos e Aggio.</a>
+                    Todos os direitos reservados.
+                    <br>
+                    <a class="mt-5">Desenvolvido Por <a href="">Marcelo N.Aggio</a></a>
+                </span>
+                <br>
 
-			</div>
+            </div>
         </div>
     </footer>
     <script src="../js/script.js"></script>

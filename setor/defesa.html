@@ -18,141 +18,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/accordions.css">
     <link rel="stylesheet" href="css/golpe.css">
+    <link rel="stylesheet" href="css/defesa.css">
 
 
     <style>
-        @media(max-width: 992px) {
-            .nav-item {
-                display: block;
-            }
-
-            .nav-item a {
-                font-size: 20px;
-                color: #fff !important;
-            }
-
-            .dropdown-menu a {
-                color: #000 !important;
-            }
-        }
-
-        .imagem img {
-            height: 100%;
-            width: 100%;
-        }
-
-        .texto {
-            height: 100%;
-        }
-
-        .navbar {
-            position: relative !important;
-        }
-
-        .h1-part2 {
-            width: 100%;
-        }
-
-        .item {
-            width: 100%;
-        }
-
-        .card {
-            width: 100%;
-            height: 254px;
-            border-radius: 20px;
-            background: #f5f5f5;
-            position: relative;
-            padding: 1.8rem;
-            border: 2px solid #c3c6ce;
-            transition: 0.5s ease-out;
-            overflow: visible;
-            margin: 0 auto;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card-details {
-            color: black;
-            height: 100%;
-            gap: .5em;
-            display: grid;
-            place-content: center;
-        }
-
-        .card-button {
-            transform: translate(-50%, 125%);
-            width: 60%;
-            border-radius: 1rem;
-            border: none;
-            background-color: #2f2f35;
-            color: #fff;
-            font-size: 1rem;
-            padding: .5rem 1rem;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            opacity: 0;
-            transition: 0.3s ease-out;
-        }
-
-        .text-body {
-            color: rgb(134, 134, 134);
-        }
-
-        /*Text*/
-        .text-title {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        /*Hover*/
-        .card:hover {
-            border-color: #2f2f35;
-            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-        }
-
-        .card:hover .card-button {
-            transform: translate(-50%, 50%);
-            opacity: 1;
-        }
-        .solucao{
-            background-image: url("imgGolpe/planejamento.jpg");
-        }
-        .atendimento{
-            background-image: url("imgGolpe/atendimento.jpg");
-        }
-        .busca{
-            background-image: url("imgGolpe/equipe.jpg");
-        }
-        .text-info {
-            cursor: pointer !important;
-        }   
-        .propaganda{
-            background-color: #2f2f35;
-            color: #fff;
-        }
-        .linkSite{
-            cursor: pointer;
-            color: #fff;
-            text-decoration: none;
-            list-style: none;
-        }
-        .linkSite:hover{
-            color: #c3c6ce;
-        }
-        .local{
-            width: 100%;
-            margin: 0 auto;
-        }
-        .infos{
-            width: 80%;
-            margin: 0 auto;
-        }
-        .colunas{
-            width: 80%;
-            margin: 0 auto;
-        }
+        
     </style>
 
 </head>
@@ -163,29 +33,40 @@
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img src="../img/logoNav.png" alt=""></a>
-
+    
+            <!-- Menu Hambúrguer -->
+    
+            <div class="dropdown_menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="golpes.html">Golpe Pix</a></li>
+                <li><a href="defesa.html">Defesa busca e apreensão</a></li>
+                <li><a href="fraude.html">Fraude Cartão de credito</a></li>
+                <li><a href="execucao.html">Execução Fiscal</a></li>
+            </div>
+    
             <!-- Links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Pagina Inical</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Demais áreas de Atuação
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item  font-weight-bold" href="defesa.html">Defesa Busca e Apreensão</a></li>
-                            <li><a class="dropdown-item" href="golpes.html">Golpe Pix</a></li>
-                            <li><a class="dropdown-item" href="fraude.html">Fraude Cartão de Credito</a></li>
-                            <li><a class="dropdown-item" href="execucao.html">Execução Fiscal</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="golpes.html">Golpe Pix</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="defesa.html">Defesa busca e apreensão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fraude.html">Fraude Cartão de credito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="execucao.html">Execução Fiscal</a>
+                    </li>
                 </ul>
             </div>
-
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -258,6 +139,26 @@
         </div>
     </section>
 
+    <section class="local mt-3">
+        <h1 class="text-center mt-5">Localização</h1>
+        <div class="row colunas">
+            <div class="col-md-6 infos">
+                <h3 class="pb-4 text-secondary">Contate um especialista</h3>
+                <h3 class="pb-4 text-secondary">Contato imediato em horário comercial</h3>
+                <a class="btn btn-secondary mb-4" href="">Contate um Advogado</a>
+                <h3 class="pb-4">Campos & Aggio Advogados</h3>
+                <h4 class="pb-4 text-secondary">Avenida Marquês De São Vicente 230, São Paulo - São Paulo, 01139, Brazil
+                </h4>
+            </div>
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3006500572687!2d-46.6621582!3d-23.5216866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5807b52588af%3A0x32be386c64f2700e!2sAv.%20Marqu%C3%AAs%20de%20S%C3%A3o%20Vicente%2C%20230%20-%20V%C3%A1rzea%20da%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001139-000!5e0!3m2!1spt-BR!2sbr!4v1685141994780!5m2!1spt-BR!2sbr"
+                    style="border-radius: 8px;" width="100%" height="350" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
     <section class="mt-3">
         <h1 class="text-center mt-5">Perguntas frequentes</h1>
         <h4 class="text-center">Não achou uma resposta?</h4>
@@ -303,26 +204,6 @@
         </div>
     </section>
 
-    <section class="propaganda pt-4 pb-4">
-        <h3 class="text-center">Venha nós conhecer melhor visite nosso site</h3>
-        <h5 class="text-center"><a class="linkSite" href="">Campos e Aggio</a></h5>
-    </section>
-
-    <section class="local mt-3">
-        <div class="row colunas">
-            <div class="col-md-6 infos">
-                <h3 class="pb-4 text-secondary">Contate um especialista</h3>
-                <h3 class="pb-4 text-secondary">Contato imediato em horário comercial</h3>
-                <a class="btn btn-secondary mb-4" href="">Contate um Advogado</a>
-                <h3 class="pb-4">Campos & Aggio Advogados</h3>
-                <h4 class="pb-4 text-secondary">Avenida Marquês De São Vicente 230, São Paulo - São Paulo, 01139, Brazil</h4>
-            </div>
-            <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3006500572687!2d-46.6621582!3d-23.5216866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5807b52588af%3A0x32be386c64f2700e!2sAv.%20Marqu%C3%AAs%20de%20S%C3%A3o%20Vicente%2C%20230%20-%20V%C3%A1rzea%20da%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001139-000!5e0!3m2!1spt-BR!2sbr!4v1685141994780!5m2!1spt-BR!2sbr" style="border-radius: 8px;" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -330,10 +211,10 @@
                     <img src="../img/logoNav.png" alt="">
                 </div>
                 <div class="footer-col">
-                    <h4>Mapa do Site</h4>
+                    <h4>Aréas de Atuação</h4>
                     <ul>
-                        <li><a href="#" class="text-uppercase">home</a></li>
-                        <li><a href="#" class="text-uppercase">Quem somos</a></li>
+                        <li><a href="#" class="text-uppercase">Golpe PIX</a></li>
+                        <li><a href="#" class="text-uppercase"></a></li>
                         <li><a href="#" class="text-uppercase">Setores</a></li>
                         <li><a href="#" class="text-uppercase">Sócios</a></li>
 

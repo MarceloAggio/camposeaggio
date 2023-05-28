@@ -18,85 +18,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/accordions.css">
     <link rel="stylesheet" href="css/golpe.css">
-
+    <link rel="stylesheet" href="css/fraude.css">
 
     <style>
-        @media(max-width: 992px) {
-            .nav-item {
-                display: block;
-            }
-
-            .nav-item a {
-                font-size: 20px;
-                color: #fff !important;
-            }
-
-            .dropdown-menu a {
-                color: #000 !important;
-            }
-        }
-
-        .imagem img {
-            height: 100%;
-            width: 100%;
-        }
-        .texto{
-            height: 100%;
-        }
-        .navbar {
-            position: relative !important;
-        }
-
-        .h1-part2 {
-            width: 100%;
-        }
-
-        .item {
-            width: 100%;
-        }
-
-        .card {
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .cards .wpp {
-            background-image: url("imgGolpe/wpp.jpg");
-        }
-
-        .cards .call {
-            background-image: url("imgGolpe/call.jpg");
-        }
-
-        .cards .amazon {
-            background-image: url("imgGolpe/amazon.png");
-        }
-
-        .cards .roubo {
-            background-image: url("imgGolpe/roubo.jpg");
-        }
-
-        .cards .card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            height: 400px;
-            width: 450px;
-            border-radius: 10px;
-            color: white;
-            cursor: pointer;
-            transition: 400ms;
-        }
-
-        .cards .card p.tip {
-            font-size: 1em;
-            font-weight: 700;
-        }
-        .text-info{
-            cursor: pointer !important;
-        }
+        
     </style>
 
 </head>
@@ -107,29 +32,40 @@
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img src="../img/logoNav.png" alt=""></a>
-
+    
+            <!-- Menu Hambúrguer -->
+    
+            <div class="dropdown_menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="golpes.html">Golpe Pix</a></li>
+                <li><a href="defesa.html">Defesa busca e apreensão</a></li>
+                <li><a href="fraude.html">Fraude Cartão de credito</a></li>
+                <li><a href="execucao.html">Execução Fiscal</a></li>
+            </div>
+    
             <!-- Links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Pagina Inical</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Demais áreas de Atuação
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item font-weight-bold" href="fraude.html">Fraude Cartão de Credito</a></li>
-                            <li><a class="dropdown-item" href="golpes.html">Golpe Pix</a></li>
-                            <li><a class="dropdown-item" href="defesa.html">Defesa Busca e Apreensão</a></li>
-                            <li><a class="dropdown-item" href="execucao.html">Execução Fiscal</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="golpes.html">Golpe Pix</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="defesa.html">Defesa busca e apreensão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="fraude.html">Fraude Cartão de credito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="execucao.html">Execução Fiscal</a>
+                    </li>
                 </ul>
             </div>
-
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
