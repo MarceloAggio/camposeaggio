@@ -94,15 +94,15 @@
 }
 
 .img1 {
-    background-image: url("imgGolpe/balanca.png");
+    background-image: url("../imgGolpe/balanca.png");
 }
 
 .img2 {
-    background-image: url("imgGolpe/legislacao.png");
+    background-image: url("../imgGolpe/legislacao.png");
 }
 
 .img3 {
-    background-image: url("imgGolpe/advogado.png");
+    background-image: url("../imgGolpe/advogado.png");
 }
 
 .local {
@@ -131,4 +131,8 @@
 }
 .linkSite:hover{
     color: #c3c6ce;
+}
+.btn-propaganda{
+    margin: 0 auto;
+    width: 30%;
 }

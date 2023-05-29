@@ -21,19 +21,19 @@
 }
 
 .cards .wpp {
-    background-image: url("imgGolpe/wpp.jpg");
+    background-image: url("../imgGolpe/wpp.jpg");
 }
 
 .cards .call {
-    background-image: url("imgGolpe/call.jpg");
+    background-image: url("../imgGolpe/call.jpg");
 }
 
 .cards .amazon {
-    background-image: url("imgGolpe/amazon.png");
+    background-image: url("../imgGolpe/amazon.png");
 }
 
 .cards .roubo {
-    background-image: url("imgGolpe/roubo.jpg");
+    background-image: url("../imgGolpe/roubo.jpg");
 }
 
 .cards .card {

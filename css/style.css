@@ -151,3 +151,36 @@ label.logo{
     width: 10px;
     background-color: #f8f8f8;
 }
+
+#myBtn {
+    /* Oculta o botão inicialmente */
+    position: fixed;
+    /* Fixa o botão na posição desejada */
+    bottom: 20px;
+    /* Define a distância do botão em relação à parte inferior */
+    right: 30px;
+    /* Define a distância do botão em relação à direita */
+    z-index: 99;
+    /* Define a ordem de empilhamento do botão */
+    border: none;
+    /* Remove a borda */
+    outline: none;
+    /* Remove o contorno */
+    background-color: #555;
+    /* Define a cor de fundo do botão */
+    color: white;
+    /* Define a cor do texto do botão */
+    cursor: pointer;
+    /* Define o cursor do mouse como um ponteiro */
+    padding: 15px;
+    /* Define o espaçamento interno do botão */
+    border-radius: 50%;
+    /* Define a forma arredondada do botão */
+    font-size: 18px;
+    /* Define o tamanho da fonte do botão */
+}
+
+#myBtn:hover {
+    background-color: #333;
+    /* Define a cor de fundo do botão ao passar o mouse */
+}
