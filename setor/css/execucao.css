@@ -3,11 +3,6 @@
         display: block;
     }
 
-    .nav-item a {
-        font-size: 20px;
-        color: #fff !important;
-    }
-
     .dropdown-menu a {
         color: #000 !important;
     }
@@ -106,6 +101,8 @@
 }
 
 .local {
+    background-color: #47474b;
+    color: #fff !important;
     width: 100%;
     margin: 0 auto;
 }
@@ -119,20 +116,154 @@
     width: 80%;
     margin: 0 auto;
 }
-.propaganda{
+
+.propaganda {
     background-color: #2f2f35;
     color: #fff;
 }
-.linkSite{
+
+.linkSite {
     cursor: pointer;
     color: #fff;
     text-decoration: none;
     list-style: none;
 }
-.linkSite:hover{
+
+.linkSite:hover {
     color: #c3c6ce;
 }
-.btn-propaganda{
+
+.btn-propaganda {
     margin: 0 auto;
     width: 30%;
+}
+
+#myBtn {
+    /* Oculta o botão inicialmente */
+    position: fixed;
+    /* Fixa o botão na posição desejada */
+    bottom: 20px;
+    /* Define a distância do botão em relação à parte inferior */
+    right: 30px;
+    /* Define a distância do botão em relação à direita */
+    z-index: 99;
+    /* Define a ordem de empilhamento do botão */
+    border: none;
+    /* Remove a borda */
+    outline: none;
+    /* Remove o contorno */
+    background-color: #555;
+    /* Define a cor de fundo do botão */
+    color: white;
+    /* Define a cor do texto do botão */
+    cursor: pointer;
+    /* Define o cursor do mouse como um ponteiro */
+    padding: 15px;
+    /* Define o espaçamento interno do botão */
+    border-radius: 50%;
+    /* Define a forma arredondada do botão */
+    font-size: 18px;
+    /* Define o tamanho da fonte do botão */
+}
+
+#myBtn:hover {
+    background-color: #333;
+    /* Define a cor de fundo do botão ao passar o mouse */
+}
+
+@media(max-width: 852px) {
+    .card {
+        height: 475px;
+    }
+}
+
+@media(max-width: 767px) {
+    .cards .row .col-md-3 {
+        margin: 20px 0;
+    }
+
+    .texto {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .local h1 {
+        margin-bottom: 10px;
+    }
+
+    .infos {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .accordion {
+        width: 95%;
+    }
+
+    .label h3 {
+        font-size: 21px;
+    }
+
+    .containere {
+        flex-direction: column;
+    }
+
+    .card {
+        height: 300px;
+    }
+}
+
+@media(max-width: 572px) {
+    .label h3 {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 552px) {
+    .label h3 {
+        font-size: 15px;
+    }
+}
+
+.dropdown_menu.open {
+    background-color: #c3c6ce !important;
+}
+
+@media(max-width: 452px) {
+    .text-info {
+        font-size: 22px !important;
+    }
+}
+
+.label h3 {
+    width: 85% !important;
+}
+
+@media (max-width: 992px) {
+    .navbar .toggle_btn {
+        display: none !important;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-item a {
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 888px){
+    .nav-item a {
+        font-size: 16px !important;
+    }
+}   
+@media (max-width: 768px) {
+    .navbar .toggle_btn {
+        display: block !important;
+    }
+
+}
+
+.nav-item a {
+    color: #fff !important;
 }
