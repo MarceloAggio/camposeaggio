@@ -40,11 +40,6 @@ body {
     }
 }
 
-@media (max-width: 1002px) {
-    .nav-item {
-        font-size: 20px !important;
-    }
-}
 
 @media (max-width: 960px) {
 
@@ -91,5 +86,27 @@ body {
 @media(max-width: 452px){
     .text-info{
         font-size: 15px !important;
+    }
+}
+
+@media (max-width: 833px) {
+    .nav-item a {
+        font-size: 14px !important;
+    }
+}
+
+
+.btn-localizacaoResp{
+    display: none !important;
+    width: 250px;
+}
+
+@media(max-width: 766px){
+    .btn-localizacao{
+        display: none !important;
+    }
+
+    .btn-localizacaoResp{
+        display: block !important;
     }
 }

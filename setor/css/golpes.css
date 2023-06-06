@@ -163,3 +163,20 @@
 .nav-item a {
     color: #fff !important;
 }
+
+.btn-localizacao{
+    display: block !important;
+}
+.btn-localizacaoResp{
+    display: none !important;
+}
+
+@media(max-width: 766px){
+    .btn-localizacao{
+        display: none !important;
+    }
+
+    .btn-localizacaoResp{
+        display: block !important;
+    }
+}

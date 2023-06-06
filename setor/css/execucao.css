@@ -56,8 +56,7 @@
 }
 
 .card {
-    width: 100%;
-    height: 400px;
+    height: 300px;
     letter-spacing: 1px;
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
     transition: .2s all;
@@ -67,6 +66,7 @@
     text-align: center;
     font-size: 13px;
     padding-top: 30px;
+    margin: 20px 0;
 }
 
 .containere:hover .card {
@@ -249,7 +249,7 @@
     }
 
     .nav-item a {
-        font-size: 20px !important;
+        font-size: 14px !important;
     }
 }
 @media (max-width: 888px){
@@ -266,4 +266,26 @@
 
 .nav-item a {
     color: #fff !important;
+}
+
+@media (max-width: 833px) {
+    .nav-item a {
+        font-size: 14px !important;
+    }
+}
+
+
+.btn-localizacaoResp{
+    display: none !important;
+    width: 250px;
+}
+
+@media(max-width: 766px){
+    .btn-localizacao{
+        display: none !important;
+    }
+
+    .btn-localizacaoResp{
+        display: block !important;
+    }
 }
